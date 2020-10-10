@@ -36,7 +36,7 @@
             
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card mt-5 border border-success">
+                    <div class="card my-5 border-0 shadow ">
                         <div class="card-header bg-success text-light">
                             Daftar Surah
                         </div>
@@ -128,7 +128,7 @@
                                         <span v-for="(ayat,index) in ayats" ::key="index">
                                             <p>
                                                 <span span class="badge badge-pill badge-success">{{detail.nomor}}:{{ayat.nomor}}</span>
-                                                <span class="float-right">{{ayat.ar}}</span>
+                                                <p class="text-right">{{ayat.ar}}</p>
                                             </p>
                                             <small v-html="ayat.tr" ></small><br>
                                             <small class="text-left font-italic">{{ayat.id}}</small>
